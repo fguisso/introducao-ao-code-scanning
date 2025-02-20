@@ -7,36 +7,40 @@
   TBD-step-1-notes.
 -->
 
-## Step 1: Enable CodeQL
+## Passo 1: Ativar o code scanning
 
-👋 Hello! Welcome to the GitHub Skills course: Enable code scanning! 
+👋 Olá! Bem-vindo ao curso Introdução ao Code Scanning!
 
-Let's get started!  
+Vamos começar!
 
-In this first step, we'll be learning more about CodeQL and how to use it to secure your source code. 
+Neste primeiro passo, vamos aprender mais sobre o CodeQL e como utilizá-lo para proteger o seu código fonte.
 
-**What is GitHub code scanning**: _[Code scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning)_ is a capability that allows development teams to integrate security testing tools into the software development process. This is done using GitHub Actions. With code scanning, you can integrate many different types of tools including SAST, container, and infrastructure as code security tools.
+**O que é o code scanning do GitHub**: _[Code scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning)_ é uma funcionalidade que permite que equipes de desenvolvimento integrem ferramentas de teste de segurança no processo de desenvolvimento de software. Isso é feito por meio do GitHub Actions. Com o code scanning, você pode integrar diversos tipos de ferramentas, incluindo SAST, segurança para containers e infraestrutura como código.
 
-**What is CodeQL**: _[CodeQL](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql)_ is a static analysis testing tool that helps you identify security weaknesses such as SQL injection, cross-site scripting, and code injection issues.
+**O que é SAST?**:
+**SAST (Static Application Security Testing)** é uma abordagem para identificar vulnerabilidades de segurança no código fonte, analisando-o de forma estática em busca de padrões no código, ou seja, sem executá-lo. Essa técnica permite detectar problemas como falhas de injeção, validação inadequada de dados e outros riscos antes mesmo que o software seja executado.
 
-### :keyboard: Activity: Enable code scanning with CodeQL
-  
-First, we will enable code scanning with CodeQL in our repository.
+**O que é o CodeQL**: _[CodeQL](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql)_ é uma ferramenta de análise estática que ajuda a identificar vulnerabilidades de segurança, como injeção de SQL, cross-site scripting entre outros problemas de segurança que possam ser descobertos pelo padrão do código.
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-2. Navigate to the **Settings** tab at the top of your newly created repository.
-3. Under the **Security** section on the left side, select **Code security and analysis**.
-4. Scroll down to the section titled **Code scanning**. For the purpose of this course, we will focus on CodeQL analysis.
-5. Click on the **Set up** dropdown menu and choose **Default**.
-![enable-code-scanning-default.png](/images/enable-code-scanning-default.png)
+### :keyboard: Atividade: Ativar o code scanning default
 
-Let's take a look at the configuration options in the modal:
-  
-  - **Languages to analyze:** These are the languages that will be scanned by CodeQL. In this case, we will be scanning in `Python`.  
-  - **Query suites:** CodeQL [queries](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql#about-codeql-queries) are packaged in bundles called "suites". This section allows you to choose which query suite to use.  We'll leave this set as **Default** for this exercise. For more information, see "[About CodeQL queries](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql#about-codeql-queries)." 
-  - **Events:** This section tells CodeQL when to scan. In this case, it's set to scan on any pull request to the `main` branch.
-    
-![codeql-default-configuration-box.png](/images/codeql-default-configuration-box.png)
+Primeiro, vamos ativar o code scanning em nosso repositório.
 
-6. Click **Enable CodeQL**
-7. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+1. Abra uma nova aba no navegador e execute os passos na segunda aba enquanto lê as instruções aqui.
+2. Navegue até a aba **Settings** (Configurações) no topo do seu novo repositório.
+3. No menu à esquerda, em **Security** (Segurança), selecione **Code security** (Segurança de código).
+4. Role até a seção intitulada **Code scanning**. Para este curso, vamos focar na análise com CodeQL.
+5. Clique no menu suspenso **Set up** (Configurar) e escolha **Default** (Padrão).
+
+   ![enable-code-scanning-default.png](/images/enable-code-scanning-default.png)
+
+Vamos dar uma olhada nas opções de configuração na janela modal:
+
+- **Languages to analyze (Linguagens a serem analisadas):** Estas são as linguagens que serão escaneadas pelo CodeQL. Neste caso, vamos analisar em `Python`. *O CodeQL também suporte analises de Github Actions maliciosas, mas não vamos utilizar neste momento.*
+- **Query suites (Pacotes de consultas):** As [consultas](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql#about-codeql-queries) do CodeQL são agrupadas em pacotes chamados "suites". Esta seção permite escolher qual pacote utilizar. Vamos deixar definido como **Default** para este exercício. Para mais informações, consulte "[Sobre CodeQL queries](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql#about-codeql-queries)".
+- **Events (Eventos):** Esta seção define quando o CodeQL deve realizar a varredura. Neste caso, ele está configurado para escanear em qualquer pull request ou push para a branch `main`.
+
+   ![codeql-default-configuration-box.png](/images/codeql-default-configuration-box.png)
+
+6. Clique em **Enable CodeQL** (Ativar CodeQL).
+7. Aguarde cerca de 20 segundos e, em seguida, atualize esta página (aquela de onde você está seguindo as instruções). O [GitHub Actions](https://docs.github.com/en/actions) atualizará automaticamente para o próximo passo.

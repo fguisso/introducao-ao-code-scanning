@@ -9,9 +9,9 @@
   Add your open source license, GitHub uses the MIT license.
 -->
 
-# Enable CodeQL to secure your source code
+# Habilitando o Code Scanning para deixar seu código seguro
 
-_Ensuring the security of application source code is a critical step in modern software development. In this GitHub Skills course, you will learn to use GitHub code scanning to identify, resolve, and prevent insecure coding patterns._
+_Assegurar a segurança do código fonte das aplicações é um passo essencial no desenvolvimento de software moderno. Neste curso você ira aprender como usar o Github Code Scanning para identificar, resolver e previnir padrões inseguros de código._
 
 </header>
 
@@ -24,21 +24,21 @@ _Ensuring the security of application source code is a critical step in modern s
   TBD-step-1-notes.
 -->
 
-## Welcome
+## Olá, mundo!
 
-_Welcome to "Introduction to CodeQL"! :wave:_
+_Bem-vindo(a) ao "Introdução ao CodeQL"! :wave:_
 
-In this course, we will explore using GitHub code scanning, powered by [CodeQL](https://codeql.github.com/), to identify common coding practices that can lead to security vulnerabilities. During this course, we will enable code scanning on your repository to identify, remediate, and prevent vulnerabilities.
-  
-Code scanning is part of the [GitHub Advanced Security (GHAS)](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security) product suite. All of the features of Advanced Security are 100% free for open source, public repositories.
+Neste curso, vamos explorar como usar o code scanning do GitHub, impulsionado pelo [CodeQL](https://codeql.github.com/), para detectar práticas de programação que podem deixar brechas na segurança. Durante nosso percurso, vamos ativar o code scanning no seu repositório para identificar, corrigir e evitar que novas vulnerabilidades apareçam.
 
-- **Who is this for**: Developers, security engineers, open source maintainers.
-- **What you'll learn**: We'll show you how to enable code scanning and identify SQL injection vulnerabilities with CodeQL.
-- **What you'll build**: A secure software development pipeline that allows you to identify and prevent new security vulnerabilities from being introduced into your production code.
-- **Prerequisites**: In this course, you'll need a baseline knowledge of GitHub concepts such as pull requests, GitHub Actions, and source code. You'll also need to be familiar with the concepts of Static Application Security Testing (SAST). Don't worry, we'll demistify the complex parts for you 🙂.
-- **How long**: This course is four steps long and takes less than 30 minutes to complete.
+O code scanning é parte da suíte de recursos do [GitHub Advanced Security (GHAS)](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security). E a melhor parte: todos os recursos do Advanced Security são 100% gratuitos para repositórios públicos e open source!
 
-## How to start this course
+- **Para quem é este curso**: Desenvolvedores, engenheiros de segurança e mantenedores de projetos open source.
+- **O que você vai aprender**: Mostraremos como ativar o code scanning e identificar vulnerabilidades de injeção de SQL com o CodeQL.
+- **O que você vai construir**: Uma pipeline de desenvolvimento segura, que identifica e previne novas vulnerabilidades antes que elas entrem em ação na produção.
+- **Pré-requisitos**: Você precisa ter uma noção básica dos conceitos do GitHub, como pull requests, GitHub Actions e gerenciamento de código fonte. Também é bom já estar familiarizado com o que é Static Application Security Testing (SAST). Mas relaxe, vamos descomplicar tudo para você! 🙂
+- **Duração**: São apenas quatro passos, e o curso leva menos de 30 minutos para ser concluído.
+
+## Como começar este curso
 
 <!-- For start course, run in JavaScript:
 'https://github.com/new?' + new URLSearchParams({
@@ -51,14 +51,14 @@ Code scanning is part of the [GitHub Advanced Security (GHAS)](https://docs.gith
 }).toString()
 -->
 
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=skills&template_name=introduction-to-codeql&owner=%40me&name=skills-introduction-to-codeql&description=GitHub+Skills:+Introduction+to+CodeQL&visibility=public)
+[![Começar o curso](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=fguisso&template_name=introducao-ao-code-scanning&owner=%40me&name=introducao-ao-code-scanning&description=Introdu%C3%A7%C3%A3o%20guiada%20ao%20Code%20Scanning&visibility=public)
 
-1. Right-click **Start course** and open the link in a new tab.
-2. In the new tab, most of the prompts will automatically fill in for you.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
-3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
+1. Clique com o botão direito em **Começar o curso** e abra o link em uma nova aba.
+2. Na nova aba, a maioria dos campos já estará preenchida para você.
+   - Para o "owner", escolha sua conta pessoal ou a organização onde deseja hospedar o repositório. *Ao utilizar uma organização, algumas regras do Github Advanced Security podem estar habilitadas por padrão. Prefira utilizar sua conta pessoal*
+   - Recomendamos criar um repositório público, pois os privados consomem minutos do GitHub Actions, conforme explicado [aqui](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
+   - Role a página até o fim e clique no botão **Create repository**.
+3. Depois que o repositório for criado, espere cerca de 20 segundos, atualize esta página e siga as instruções detalhadas no README do seu novo repositório.
 
 <footer>
 
@@ -68,9 +68,10 @@ Code scanning is part of the [GitHub Advanced Security (GHAS)](https://docs.gith
 -->
 
 ---
+Precisa de ajuda?:
+- [Manda para gente!](https://github.com/fguisso/introducao-ao-code-scanning/discussions)
+- [Github Skills: Post in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-codeql) &bull; 
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-codeql) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+&copy; 2023 GitHub • [Código de Conduta](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) • [Licença MIT](https://gh.io/mit)
 
 </footer>

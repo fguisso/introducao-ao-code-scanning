@@ -3,24 +3,22 @@
   Review what we learned, ask for feedback, provide next steps.
 -->
 
-## Finish
+## Finalizando
 
-_Congratulations! You have completed this course!_ 🏆
+_Parabéns! Você concluiu este curso!_ 🏆
 
-Here's a recap of all the tasks you accomplished in your repository:
-  - Enabled CodeQL on your repository.
-  - CodeQL scanned the code in your repository and notified us of two SQL injection vulnerabilities.
-  - Reviewed the findings, marked the findings as closed, and explored the audit trail.
-  - Fixed your code in the main branch and saw that the findings automatically closed out.
-  - Introduced a new vulnerability in a new branch.
-  - Created a pull request, and were notified of the vulnerability.
+Aqui está um resumo de todas as tarefas que você realizou em seu repositório:
+  - Ativou o CodeQL no seu repositório.
+  - O CodeQL analisou o código e nos notificou de duas vulnerabilidades de injeção de SQL.
+  - Revisou os resultados, marcou os alertas como fechados e explorou o rastro de auditoria.
+  - Corrigiu seu código na branch principal e observou que os alertas foram automaticamente encerrados.
+  - Introduziu uma nova vulnerabilidade em uma nova branch.
+  - Criou um pull request e foi notificado da vulnerabilidade.
 
-### What's next?
+### E agora?
 
-- Continue your learning! Our [code scanning documentation](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning) is a great resource for learning more about CodeQL.
-- Learn more about CodeQL. Take a look at the [CodeQL documenation](https://codeql.github.com/docs/) site to learn about all of the features of this powerful tool.
-- [We'd love to hear what you thought of this course](https://github.com/orgs/skills/discussions/405).
-- [Take another Skills course.](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
-
+- Continue aprendendo! A [documentação de code scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning) é um ótimo recurso para aprender mais sobre o CodeQL.
+- Saiba mais sobre o CodeQL. Confira o site da [documentação do CodeQL](https://codeql.github.com/docs/) para conhecer todos os recursos desta poderosa ferramenta.
+- [Gostaríamos muito de saber sua opinião sobre este curso](https://github.com/fguisso/introducao-ao-code-scanning/discussions/1).
+- [Cursos do Github Skills.](https://github.com/skills)
+- [Leia a documentação de Introdução ao GitHub](https://docs.github.com/en/get-started).

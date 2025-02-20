@@ -51,7 +51,7 @@ O code scanning é parte da suíte de recursos do [GitHub Advanced Security (GHA
 }).toString()
 -->
 
-[![Começar o curso](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=fguisso&template_name=introducao-ao-code-scanning&owner=%40me&name=introducao-ao-code-scanning&description=Introdu%C3%A7%C3%A3o%20guiada%20ao%20Code%20Scanning&visibility=public)
+[![Começar o curso](https://raw.githubusercontent.com/fguisso/introducao-ao-code-scanning/refs/heads/main/images/botao-curso.svg)](https://github.com/new?template_owner=fguisso&template_name=introducao-ao-code-scanning&owner=%40me&name=introducao-ao-code-scanning&description=Introdu%C3%A7%C3%A3o%20guiada%20ao%20Code%20Scanning&visibility=public)
 
 1. Clique com o botão direito em **Começar o curso** e abra o link em uma nova aba.
 2. Na nova aba, a maioria dos campos já estará preenchida para você.

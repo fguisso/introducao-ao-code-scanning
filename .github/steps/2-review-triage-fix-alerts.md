@@ -70,7 +70,7 @@ Utilize os botões no canto superior direito do alerta para triá-lo como *resol
 **Informações adicionais:**  
 Por fim, o painel à direita contém informações como tags, detalhes sobre CWE e a severidade do alerta.
   
-![additional-information.png](/images/additiona-information.png)
+![additional-information.png](/images/additional-information.png)
 
 ### :keyboard: Atividade 4: Descartar um Alerta
 
@@ -112,10 +112,10 @@ Agora que sabemos onde estão os problemas e como corrigi-los, vamos começar mo
 
    ![edit-button.png](/images/edit-button.png)
 
-5. Edite a linha 16, destacando a instrução SQL, e substitua por este texto:  
-   `"SELECT * FROM books WHERE name LIKE %s", name`.
-6. Edite a linha 22 para substituir a instrução SQL pelo seguinte texto:  
-   `"SELECT * FROM books WHERE author LIKE %s", author`.
+5. Edite a linha 13, destacando a instrução SQL, e substitua por este texto:  
+   `"SELECT * FROM books WHERE name LIKE ?", (f"%{name}%",)`.
+6. Edite a linha 19 para substituir a instrução SQL pelo seguinte texto:  
+   `"SELECT * FROM books WHERE author LIKE ?", (f"%{author}%",)`.
 7. Clique em **Commit changes...** (Confirmar alterações) no canto superior direito. A janela "Propose changes" (Propor alterações) aparecerá. Deixe as configurações padrão e clique novamente em **Commit changes**.
 8. O CodeQL iniciará uma nova varredura. Verifique o status dessa varredura navegando até **Actions** e escolhendo a ação **CodeQL**. Assim que o trabalho da varredura for concluído, o Actions exibirá um ícone de check verde ao lado da última execução.
 9. Quando a varredura do CodeQL terminar, navegue até **Security** > **Code scanning** para revisar os alertas. Você deverá ver zero alertas abertos e dois alertas fechados 🎉. Sinta-se à vontade para revisar os alertas fechados, especialmente o rastro de auditoria.

@@ -1,4 +1,4 @@
-name: Step 5, TBD-step-5-name
+name: Step 4, TBD-step-4-name
 
 # This step triggers after TBD-step-5-event-desc.
 # This workflow updates from step 5 to step X.
@@ -31,7 +31,7 @@ jobs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
   on_TBD-step-5-event:
-    name: On TBD-step-5-event
+    name: On TBD-step-4-event
     needs: get_current_step
 
     # We will only run this action when:
@@ -41,7 +41,7 @@ jobs:
     # Reference: https://docs.github.com/en/actions/learn-github-actions/expressions
     if: >-
       ${{ !github.event.repository.is_template
-          && needs.get_current_step.outputs.current_step == 5 }}
+          && needs.get_current_step.outputs.current_step == 4 }}
 
     # We'll run Ubuntu for performance instead of Mac or Windows.
     runs-on: ubuntu-latest
@@ -60,6 +60,6 @@ jobs:
         uses: skills/action-update-step@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          from_step: 5
+          from_step: 3
           to_step: X
           branch_name: tbd-branch-name

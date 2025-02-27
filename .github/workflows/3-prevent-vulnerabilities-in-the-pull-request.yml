@@ -42,7 +42,7 @@ jobs:
     # Reference: https://docs.github.com/en/actions/learn-github-actions/expressions
     if: >-
       ${{ !github.event.repository.is_template
-          && needs.get_current_step.outputs.current_step == 4 }}
+          && needs.get_current_step.outputs.current_step == 3 }}
 
     # We'll run Ubuntu for performance instead of Mac or Windows.
     runs-on: ubuntu-latest
@@ -57,10 +57,10 @@ jobs:
       # prevent-vulnerabilities-in-the-pull-request-additional-steps
 
       # In README.md, switch step 4 for step 5.
-      - name: Update to step 5
+      - name: Update to step 4
         uses: skills/action-update-step@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          from_step: 4
+          from_step: 3
           to_step: X
           branch_name: tbd-branch-name

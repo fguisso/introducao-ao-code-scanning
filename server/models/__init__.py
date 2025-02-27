@@ -1,2 +1,1 @@
-
-from server.models.books import Book
+from .book import Book

@@ -14,7 +14,6 @@ default_books = [
     ("The Way of Kings", "Brandon Sanderson", False)
 ]
 
-
 if __name__ == "__main__":
     cursor.execute(
         '''CREATE TABLE books (name text, author text, read text)'''
@@ -26,11 +25,11 @@ if __name__ == "__main__":
                 'INSERT INTO books values (?, ?, ?)',
                 (bookname, bookauthor, 'true' if hasread else 'false')
             )
-
         except Exception as err:
             print(f'[!] Error Occurred: {err}')
 
-    flaskapp.run('0.0.0.0', debug=bool(os.environ.get('DEBUG', False)))
+    flaskapp.run('0.0.0.0', port=5001, debug=bool(os.environ.get('DEBUG', False)))
     
     cursor.close()
     database.close()
+

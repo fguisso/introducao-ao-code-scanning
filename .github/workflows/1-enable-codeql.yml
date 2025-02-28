@@ -64,5 +64,5 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           from_step: 1
-          to_step: 3
+          to_step: 2
           branch_name: tbd-branch-name
